@@ -1,0 +1,49 @@
+%! Author = yhirs
+%! Date = 23/11/2022
+
+% Preamble
+\documentclass[12pt]{amsart}
+
+% Packages
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage[top=2cm,bottom=2cm,left=2.5cm,right=2cm]{geometry}
+\usepackage{hyperref}
+\usepackage{algpseudocode}
+
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\renewcommand{\thefigure}{\arabic{section}.\arabic{subsection}.\arabic{figure}}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{lemma}{Lemma}[section]
+
+\title{Paper Template}
+\author{Ezekiel Yishai Hirshhorn}
+\date{}
+
+% Document
+\begin{document}
+
+    \maketitle
+
+    \begin{abstract}
+        This is the abstract blah blah.
+    \end{abstract}
+
+    \section{Introduction}\label{sec:introduction}
+    This is the introduction blah blah.
+    Next sections may include any or all of the following (or others not mentioned here):
+    Background, Preliminaries, Definitions, Results.
+
+    \bibliography{main}
+    \bibliographystyle{plain}
+
+\end{document}
